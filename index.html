@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mr. Sneakers Rwanda — Premium Sneakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">MR.<span>SNEAKERS</span></div>
+      <div class="nav-links">
+        <a href="#collection">Collection</a>
+        <a href="#brands">Brands</a>
+        <a href="#how">How to Order</a>
+        <a href="#contact" class="nav-cta">Order Now</a>
+      </div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#collection" onclick="closeMobile()">Collection</a>
+      <a href="#brands" onclick="closeMobile()">Brands</a>
+      <a href="#how" onclick="closeMobile()">How to Order</a>
+      <a href="#contact" onclick="closeMobile()" class="mobile-cta">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-badge">🇷🇼 Rwanda's #1 Sneaker Store</span>
+      <h1>Step Into<br/><span class="gradient-text">Premium Style</span></h1>
+      <p>Authentic sneakers from the world's top brands. Delivered to your door anywhere in Rwanda. Just send us a WhatsApp message.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/250792402699?text=Hello!%20I%20want%20to%20order%20sneakers%20from%20Mr.Sneakers%20Rwanda." class="btn-primary" target="_blank">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Order on WhatsApp
+        </a>
+        <a href="#collection" class="btn-secondary">Browse Collection</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Models Available</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">1000+</span><span class="stat-label">Happy Customers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Authentic</span></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-wrap">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="Premium Sneaker"/>
+        <div class="hero-img-badge">NEW DROP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Nike</span><span>•</span><span>Adidas</span><span>•</span><span>Jordan</span><span>•</span>
+      <span>Yeezy</span><span>•</span><span>New Balance</span><span>•</span><span>Puma</span><span>•</span>
+      <span>Converse</span><span>•</span><span>Vans</span><span>•</span><span>Reebok</span><span>•</span>
+      <span>Balenciaga</span><span>•</span><span>Off-White</span><span>•</span>
+      <!-- repeat -->
+      <span>Nike</span><span>•</span><span>Adidas</span><span>•</span><span>Jordan</span><span>•</span>
+      <span>Yeezy</span><span>•</span><span>New Balance</span><span>•</span><span>Puma</span><span>•</span>
+      <span>Converse</span><span>•</span><span>Vans</span><span>•</span><span>Reebok</span><span>•</span>
+      <span>Balenciaga</span><span>•</span><span>Off-White</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- COLLECTION -->
+  <section id="collection" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Collection</span>
+        <h2>Trending Sneakers</h2>
+        <p>From classics to the latest drops — we've got every style covered</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
+        <button class="filter-btn" onclick="filterCards('nike', this)">Nike</button>
+        <button class="filter-btn" onclick="filterCards('adidas', this)">Adidas</button>
+        <button class="filter-btn" onclick="filterCards('jordan', this)">Jordan</button>
+        <button class="filter-btn" onclick="filterCards('other', this)">Other Brands</button>
+      </div>
+
+      <div class="cards-grid" id="cardsGrid">
+
+        <div class="card" data-brand="nike">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=400&q=80" alt="Nike Air Max"/>
+            <span class="card-tag">Nike</span>
+          </div>
+          <div class="card-body">
+            <h3>Nike Air Max 270</h3>
+            <p>Max cushioning, all-day comfort. Available in all sizes.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Nike%20Air%20Max%20270.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="jordan">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556906781-9a412961a28e?w=400&q=80" alt="Air Jordan"/>
+            <span class="card-tag hot">🔥 Hot</span>
+          </div>
+          <div class="card-body">
+            <h3>Air Jordan 1 Retro</h3>
+            <p>The iconic silhouette. Timeless colorways, fresh off drop.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Air%20Jordan%201%20Retro.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="adidas">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=400&q=80" alt="Adidas Ultraboost"/>
+            <span class="card-tag">Adidas</span>
+          </div>
+          <div class="card-body">
+            <h3>Adidas Ultraboost 22</h3>
+            <p>Responsive Boost technology for ultimate performance.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Adidas%20Ultraboost%2022.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="nike">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=400&q=80" alt="Nike Dunk Low"/>
+            <span class="card-tag hot">🔥 Hot</span>
+          </div>
+          <div class="card-body">
+            <h3>Nike Dunk Low</h3>
+            <p>Street culture staple. Clean look, premium feel.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Nike%20Dunk%20Low.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="adidas">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&q=80" alt="Yeezy Boost 350"/>
+            <span class="card-tag">Adidas / Yeezy</span>
+          </div>
+          <div class="card-body">
+            <h3>Yeezy Boost 350 V2</h3>
+            <p>Kanye's legendary design. Every colorway available.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Yeezy%20Boost%20350%20V2.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="other">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&q=80" alt="New Balance 550"/>
+            <span class="card-tag">New Balance</span>
+          </div>
+          <div class="card-body">
+            <h3>New Balance 550</h3>
+            <p>Retro basketball vibes. Minimal, clean, and versatile.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20New%20Balance%20550.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="nike">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=400&q=80" alt="Nike React"/>
+            <span class="card-tag">Nike</span>
+          </div>
+          <div class="card-body">
+            <h3>Nike React Infinity</h3>
+            <p>Feather-light build, cloud-like React foam cushioning.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Nike%20React%20Infinity.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="other">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400&q=80" alt="Puma Suede"/>
+            <span class="card-tag">Puma</span>
+          </div>
+          <div class="card-body">
+            <h3>Puma Suede Classic</h3>
+            <p>A timeless icon. Butter-soft suede upper, classic style.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Puma%20Suede%20Classic.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section id="brands" class="section brands-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Top Brands</span>
+        <h2>We Stock Every Brand</h2>
+        <p>Don't see your brand? Just ask us on WhatsApp — we source any model.</p>
+      </div>
+      <div class="brands-grid">
+        <div class="brand-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike"/>
+          <span>Nike</span>
+        </div>
+        <div class="brand-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas"/>
+          <span>Adidas</span>
+        </div>
+        <div class="brand-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Puma_logo.svg" alt="Puma"/>
+          <span>Puma</span>
+        </div>
+        <div class="brand-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/New_Balance_logo.svg" alt="New Balance"/>
+          <span>New Balance</span>
+        </div>
+        <div class="brand-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Converse_logo.svg/512px-Converse_logo.svg.png" alt="Converse"/>
+          <span>Converse</span>
+        </div>
+        <div class="brand-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vans-logo.svg/512px-Vans-logo.svg.png" alt="Vans"/>
+          <span>Vans</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO ORDER -->
+  <section id="how" class="section how-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simple Process</span>
+        <h2>How to Order</h2>
+        <p>Get your dream sneakers in 3 easy steps</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-icon">👟</div>
+          <h3>Pick Your Pair</h3>
+          <p>Browse our collection above or tell us exactly what model, size, and color you want.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-icon">💬</div>
+          <h3>Send a WhatsApp</h3>
+          <p>Message us on <strong>+250 792 402 699</strong> with the sneaker name and your size. We'll confirm availability and price instantly.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-icon">📦</div>
+          <h3>Get Delivered</h3>
+          <p>We arrange delivery to your location anywhere in Rwanda. Pay on delivery or via MoMo.</p>
+        </div>
+      </div>
+      <div class="how-cta">
+        <a href="https://wa.me/250792402699?text=Hello!%20I%20want%20to%20order%20sneakers." class="btn-primary large" target="_blank">
+          <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Start Your Order Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Reviews</span>
+        <h2>What Our Customers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Got my Jordan 1s in 2 days. Legit and clean. Best sneaker plug in Kigali!"</p>
+          <div class="testi-author"><strong>Emmanuel K.</strong> — Kigali</div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Ordered Yeezys and they came exactly as shown. 100% authentic. Will order again!"</p>
+          <div class="testi-author"><strong>Diane M.</strong> — Musanze</div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Super fast reply on WhatsApp, helped me find my size. Delivery was smooth. 10/10!"</p>
+          <div class="testi-author"><strong>Patrick R.</strong> — Huye</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section id="contact" class="section cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-text">
+          <h2>Ready to cop your next pair?</h2>
+          <p>Message us now and get your sneakers delivered anywhere in Rwanda. Fast replies, authentic kicks, best prices.</p>
+          <div class="cta-contact-info">
+            <div class="contact-item">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              +250 792 402 699
+            </div>
+            <div class="contact-item">📍 Kigali, Rwanda — Delivering Nationwide</div>
+          </div>
+        </div>
+        <div class="cta-action">
+          <a href="https://wa.me/250792402699?text=Hello!%20I%20want%20to%20order%20sneakers%20from%20Mr.Sneakers%20Rwanda." class="btn-whatsapp" target="_blank">
+            <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <p class="cta-note">We usually reply within minutes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="logo">MR.<span>SNEAKERS</span></div>
+        <p>Rwanda's Premier Sneaker Destination. Authentic. Fast. Affordable.</p>
+        <p class="footer-copy">© 2026 Mr. Sneakers Rwanda. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/250792402699?text=Hello!%20I%20want%20to%20order%20sneakers%20from%20Mr.Sneakers%20Rwanda." class="float-wa" target="_blank" title="Order on WhatsApp">
+    <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
