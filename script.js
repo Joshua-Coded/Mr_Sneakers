@@ -14,14 +14,16 @@ function closeMobile() {
 function filterCards(brand, btn) {
   const cards = document.querySelectorAll('.card');
   const btns = document.querySelectorAll('.filter-btn');
+  const banner = document.getElementById('luxuryBanner');
 
   btns.forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
 
+  banner.style.display = brand === 'luxury' ? 'block' : 'none';
+
   cards.forEach(card => {
     if (brand === 'all' || card.dataset.brand === brand) {
       card.classList.remove('hidden');
-      card.style.animation = 'fadeIn 0.3s ease forwards';
     } else {
       card.classList.add('hidden');
     }

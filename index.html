@@ -87,6 +87,7 @@
 
       <div class="filter-tabs">
         <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
+        <button class="filter-btn luxury-tab" onclick="filterCards('luxury', this)">👑 Luxury</button>
         <button class="filter-btn" onclick="filterCards('newbalance', this)">New Balance</button>
         <button class="filter-btn" onclick="filterCards('clarks', this)">Clarks</button>
         <button class="filter-btn" onclick="filterCards('clean', this)">Clean &amp; White</button>
@@ -94,7 +95,97 @@
         <button class="filter-btn" onclick="filterCards('adidas', this)">Adidas</button>
       </div>
 
+      <!-- LUXURY BANNER -->
+      <div class="luxury-banner" id="luxuryBanner" style="display:none;">
+        <div class="luxury-banner-inner">
+          <span class="luxury-crown">👑</span>
+          <div>
+            <h3>Celebrity Grade Collection</h3>
+            <p>Exclusive collabs, limited drops &amp; grail-level kicks. The rarest sneakers on the planet.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="cards-grid" id="cardsGrid">
+
+        <!-- LUXURY / CELEBRITY TIER -->
+        <div class="card luxury-card" data-brand="luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556906781-9a412961a28e?w=500&q=85" alt="Travis Scott Jordan 1" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=85'"/>
+            <span class="card-tag luxury-tag">👑 Collab</span>
+          </div>
+          <div class="card-body">
+            <div class="luxury-label">Celebrity Drop</div>
+            <h3>Travis Scott × Air Jordan 1</h3>
+            <p>Reverse Swoosh, backwards Nike logo. Worn by Travis, coveted by everyone.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Travis%20Scott%20x%20Air%20Jordan%201.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
+          </div>
+        </div>
+
+        <div class="card luxury-card" data-brand="luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&q=85" alt="Off-White Jordan 1" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=500&q=85'"/>
+            <span class="card-tag luxury-tag">👑 Collab</span>
+          </div>
+          <div class="card-body">
+            <div class="luxury-label">Virgil Abloh Legacy</div>
+            <h3>Off-White × Nike Air Jordan 1</h3>
+            <p>The "Ten" collection. One of the most iconic sneaker releases of all time.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Off-White%20x%20Nike%20Air%20Jordan%201.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
+          </div>
+        </div>
+
+        <div class="card luxury-card" data-brand="luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773d3028?w=500&q=85" alt="Balenciaga Triple S" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500&q=85'"/>
+            <span class="card-tag luxury-tag">👑 Designer</span>
+          </div>
+          <div class="card-body">
+            <div class="luxury-label">High Fashion</div>
+            <h3>Balenciaga Triple S</h3>
+            <p>The dad shoe that started it all. A designer statement piece worn by A-listers.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Balenciaga%20Triple%20S.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
+          </div>
+        </div>
+
+        <div class="card luxury-card" data-brand="luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=85" alt="Jordan 4 Retro" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=500&q=85'"/>
+            <span class="card-tag luxury-tag">👑 Grail</span>
+          </div>
+          <div class="card-body">
+            <div class="luxury-label">Grail Level</div>
+            <h3>Air Jordan 4 Retro "Thunder"</h3>
+            <p>Drake's shoe. Jay-Z's shoe. One of the most sought-after J4 colorways ever.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Air%20Jordan%204%20Retro%20Thunder.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
+          </div>
+        </div>
+
+        <div class="card luxury-card" data-brand="luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=500&q=85" alt="Yeezy 700 Wave Runner" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=500&q=85'"/>
+            <span class="card-tag luxury-tag">👑 Limited</span>
+          </div>
+          <div class="card-body">
+            <div class="luxury-label">Kanye West Design</div>
+            <h3>Yeezy 700 Wave Runner</h3>
+            <p>The shoe that broke the internet. Multicolor mesh, dad-shoe royalty.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Yeezy%20700%20Wave%20Runner.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
+          </div>
+        </div>
+
+        <div class="card luxury-card" data-brand="luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&q=85" alt="Sacai Nike LDWaffle" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=500&q=85'"/>
+            <span class="card-tag luxury-tag">👑 Collab</span>
+          </div>
+          <div class="card-body">
+            <div class="luxury-label">Designer Collab</div>
+            <h3>Sacai × Nike LDWaffle</h3>
+            <p>Double Swoosh, deconstructed sole. Fashion-week approved, street-ready.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Sacai%20x%20Nike%20LDWaffle.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
+          </div>
+        </div>
 
         <!-- NEW BALANCE -->
         <div class="card" data-brand="newbalance">
@@ -314,7 +405,7 @@
           <div class="step-num">02</div>
           <div class="step-icon">💬</div>
           <h3>Send a WhatsApp</h3>
-          <p>Message us on <strong>+250 792 402 699</strong> with the sneaker name and your size. We'll confirm availability and price instantly.</p>
+          <p>Just send us a message on WhatsApp with the sneaker name and your size. We'll confirm availability and price instantly.</p>
         </div>
         <div class="step-arrow">→</div>
         <div class="step">
@@ -370,7 +461,7 @@
           <div class="cta-contact-info">
             <div class="contact-item">
               <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              +250 792 402 699
+              WhatsApp — Fast Replies
             </div>
             <div class="contact-item">📍 Kigali, Rwanda — Delivering Nationwide</div>
           </div>
