@@ -11,6 +11,62 @@
 </head>
 <body>
 
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announce-bar" id="announceBar">
+    <div class="announce-inner">
+      <span class="announce-text">🔥 Limited Stock — Order Before It's Gone!</span>
+      <div class="countdown" id="countdown">
+        <div class="cd-block"><span id="cd-h">00</span><small>HRS</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span id="cd-m">00</span><small>MIN</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span id="cd-s">00</span><small>SEC</small></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIZE GUIDE MODAL -->
+  <div class="modal-overlay" id="sizeModal" onclick="closeSizeGuide(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeSizeGuide()">✕</button>
+      <h3>📏 Shoe Size Guide</h3>
+      <p style="color:var(--gray);font-size:.85rem;margin-bottom:20px;">Not sure of your size? Use this chart to find the perfect fit.</p>
+      <div class="size-table-wrap">
+        <table class="size-table">
+          <thead><tr><th>US Men</th><th>US Women</th><th>UK</th><th>EU</th><th>CM</th></tr></thead>
+          <tbody>
+            <tr><td>6</td><td>7.5</td><td>5.5</td><td>38.5</td><td>24</td></tr>
+            <tr><td>6.5</td><td>8</td><td>6</td><td>39</td><td>24.5</td></tr>
+            <tr><td>7</td><td>8.5</td><td>6.5</td><td>40</td><td>25</td></tr>
+            <tr><td>7.5</td><td>9</td><td>7</td><td>40.5</td><td>25.5</td></tr>
+            <tr><td>8</td><td>9.5</td><td>7.5</td><td>41</td><td>26</td></tr>
+            <tr><td>8.5</td><td>10</td><td>8</td><td>42</td><td>26.5</td></tr>
+            <tr><td>9</td><td>10.5</td><td>8.5</td><td>42.5</td><td>27</td></tr>
+            <tr><td>9.5</td><td>11</td><td>9</td><td>43</td><td>27.5</td></tr>
+            <tr><td>10</td><td>11.5</td><td>9.5</td><td>44</td><td>28</td></tr>
+            <tr><td>10.5</td><td>12</td><td>10</td><td>44.5</td><td>28.5</td></tr>
+            <tr><td>11</td><td>12.5</td><td>10.5</td><td>45</td><td>29</td></tr>
+            <tr><td>12</td><td>13.5</td><td>11.5</td><td>46</td><td>30</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <a href="https://wa.me/250792402699?text=Hi!%20I%20need%20help%20finding%20my%20shoe%20size." class="btn-primary" style="margin-top:20px;display:inline-flex;" target="_blank">Still unsure? Ask us on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- WHATSAPP POPUP -->
+  <div class="wa-popup" id="waPopup">
+    <button class="wa-popup-close" onclick="closeWaPopup()">✕</button>
+    <div class="wa-popup-avatar">
+      <svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+    <div class="wa-popup-content">
+      <p class="wa-popup-name">Mr. Sneakers Rwanda</p>
+      <p class="wa-popup-msg">👟 Need help finding your size? Chat with us — we reply in minutes!</p>
+      <a href="https://wa.me/250792402699?text=Hi!%20I%20need%20help%20finding%20my%20size." class="wa-popup-btn" target="_blank">Chat Now</a>
+    </div>
+  </div>
+
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
@@ -19,6 +75,7 @@
         <a href="#collection">Collection</a>
         <a href="#brands">Brands</a>
         <a href="#how">How to Order</a>
+        <button onclick="openSizeGuide()" class="nav-size-btn">📏 Size Guide</button>
         <a href="#contact" class="nav-cta">Order Now</a>
       </div>
       <button class="hamburger" id="hamburger">&#9776;</button>
@@ -341,6 +398,136 @@
           <div class="stars">★★★★★</div>
           <p>"Super fast reply on WhatsApp, helped me find my size. Delivery was smooth. 10/10!"</p>
           <div class="testi-author"><strong>Patrick R.</strong> — Huye</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Us</span>
+        <h2>Why Choose Mr. Sneakers?</h2>
+        <p>We're not just a shop — we're your personal sneaker plug in Rwanda</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">✅</div>
+          <h3>100% Authentic</h3>
+          <p>Every pair is genuine. We source directly — no fakes, no replicas, ever.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h3>Same-Day Delivery</h3>
+          <p>Order in the morning, wear by evening in Kigali. Max 2 days nationwide.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>Best Prices</h3>
+          <p>Premium sneakers at fair prices. No hidden charges — what we quote is what you pay.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔄</div>
+          <h3>Easy Exchange</h3>
+          <p>Wrong size? No stress. We'll sort an exchange quickly — your satisfaction is guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENT METHODS -->
+  <section class="payment-section">
+    <div class="container">
+      <p class="payment-label">We Accept</p>
+      <div class="payment-methods">
+        <div class="payment-badge momo">
+          <span class="payment-icon">📱</span>
+          <div>
+            <span class="payment-name">MTN MoMo</span>
+            <span class="payment-sub">Mobile Money</span>
+          </div>
+        </div>
+        <div class="payment-badge airtel">
+          <span class="payment-icon">📲</span>
+          <div>
+            <span class="payment-name">Airtel Money</span>
+            <span class="payment-sub">Mobile Money</span>
+          </div>
+        </div>
+        <div class="payment-badge cod">
+          <span class="payment-icon">💵</span>
+          <div>
+            <span class="payment-name">Cash on Delivery</span>
+            <span class="payment-sub">Pay when it arrives</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know before you order</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Are the shoes 100% authentic?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes — every single pair we sell is 100% genuine and authentic. We never sell replicas or fakes. Your trust is everything to us.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How do I place an order?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Simple! Click any "Order Now" button or the WhatsApp button on this page. Tell us the shoe name, your size, and your delivery location. We'll confirm stock and price immediately.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How long does delivery take?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Same-day delivery in Kigali if you order before 3 PM. For other provinces across Rwanda, delivery takes a maximum of 2 days.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What sizes are available?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>We stock sizes from EU 36 to EU 47 for most models, covering both men's and women's sizing. Click "📏 Size Guide" in the menu for a full conversion chart. Not sure? Just ask us on WhatsApp.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I return or exchange?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes. If the size doesn't fit or there's an issue with your order, contact us within 48 hours of delivery and we'll arrange a free exchange. Your satisfaction is our priority.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What payment methods do you accept?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>We accept MTN Mobile Money (MoMo), Airtel Money, and Cash on Delivery. Pay when your shoes arrive — no upfront payment required.</p>
+          </div>
         </div>
       </div>
     </div>
