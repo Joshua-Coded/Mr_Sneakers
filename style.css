@@ -38,7 +38,7 @@ img { max-width: 100%; display: block; }
 /* ===== NAV ===== */
 nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 44px; left: 0; right: 0;
   z-index: 100;
   background: rgba(10, 10, 10, 0.9);
   backdrop-filter: blur(20px);
@@ -124,7 +124,7 @@ nav {
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;
-  padding-top: 68px;
+  padding-top: 112px;
   display: flex;
   align-items: center;
   position: relative;
@@ -790,6 +790,9 @@ footer {
 
 /* ===== ANNOUNCEMENT BAR ===== */
 .announce-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 101;
   background: linear-gradient(90deg, #ff3c00, #ff6b35, #ff3c00);
   background-size: 200% 100%;
   animation: shimmer-bar 3s linear infinite;
@@ -1185,7 +1188,7 @@ footer {
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
-    padding-top: 68px;
+    padding-top: 112px;
   }
   .hero-content {
     padding: 60px 24px 40px;
