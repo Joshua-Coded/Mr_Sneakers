@@ -90,7 +90,9 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+      <img class="hero-bg-img" src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1400&q=80" alt="" aria-hidden="true" loading="eager"/>
+    </div>
     <div class="hero-content">
       <span class="hero-badge">🇷🇼 Rwanda's #1 Sneaker Store</span>
       <h1>Step Into<br/><span class="gradient-text">Premium Style</span></h1>
@@ -195,7 +197,7 @@
         <div class="card" data-brand="nike">
           <div class="card-img-wrap">
             <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500&q=85" alt="Nike Air Force 1" loading="eager"/>
-            <span class="card-tag hot">🔥 Hot</span>
+            <span class="card-tag bestseller">🏆 Best Seller</span>
           </div>
           <div class="card-body">
             <h3>Nike Air Force 1 — Unisex</h3>
@@ -219,7 +221,7 @@
         <div class="card" data-brand="adidas">
           <div class="card-img-wrap">
             <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=500&q=85" alt="Adidas Samba OG" loading="eager"/>
-            <span class="card-tag hot">🔥 Hot</span>
+            <span class="card-tag bestseller">🏆 Best Seller</span>
           </div>
           <div class="card-body">
             <h3>Adidas Samba OG — Unisex</h3>
@@ -243,7 +245,7 @@
         <div class="card" data-brand="newbalance">
           <div class="card-img-wrap">
             <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&q=85" alt="New Balance 550" loading="eager"/>
-            <span class="card-tag hot">🔥 Hot</span>
+            <span class="card-tag bestseller">🏆 Best Seller</span>
           </div>
           <div class="card-body">
             <h3>New Balance 550 — Unisex</h3>
@@ -347,24 +349,29 @@
       </div>
       <div class="steps-grid">
         <div class="step">
-          <div class="step-num">01</div>
-          <div class="step-icon">👟</div>
+          <div class="step-num-circle">01</div>
+          <div class="step-icon-wrap">👟</div>
           <h3>Pick Your Pair</h3>
-          <p>Browse our collection above or tell us exactly what model, size, and color you want.</p>
+          <p>Browse our collection or tell us the exact model, size, and color you want.</p>
         </div>
-        <div class="step-arrow">→</div>
+        <div class="step-arrow">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 16h20M20 10l6 6-6 6" stroke="#ff3c00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <div class="step">
-          <div class="step-num">02</div>
-          <div class="step-icon">💬</div>
+          <div class="step-num-circle">02</div>
+          <div class="step-icon-wrap">💬</div>
           <h3>Send a WhatsApp</h3>
-          <p>Just send us a message on WhatsApp with the sneaker name and your size. We'll confirm availability and price instantly.</p>
+          <p>Message us with the sneaker name and your size. We confirm stock and price in minutes.</p>
         </div>
-        <div class="step-arrow">→</div>
+        <div class="step-arrow">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 16h20M20 10l6 6-6 6" stroke="#ff3c00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <div class="step">
-          <div class="step-num">03</div>
-          <div class="step-icon">📦</div>
+          <div class="step-num-circle">03</div>
+          <div class="step-icon-wrap">📦</div>
           <h3>Get Delivered Fast</h3>
-          <p>Same-day delivery in Kigali. Maximum 2 days anywhere in Rwanda. Pay on delivery or via MoMo.</p>
+          <p>Same-day in Kigali, max 2 days nationwide. Pay on delivery or via MoMo.</p>
+          <div class="step-note">📱 WhatsApp updates at every step — from order to door</div>
         </div>
       </div>
       <div class="how-cta">
@@ -529,6 +536,65 @@
             <p>We accept MTN Mobile Money (MoMo), Airtel Money, and Cash on Delivery. Pay when your shoes arrive — no upfront payment required.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY & RETURNS -->
+  <section class="section delivery-section" id="delivery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Delivery & Returns</span>
+        <h2>We Deliver Everywhere in Rwanda</h2>
+        <p>Fast, tracked — and hassle-free exchanges</p>
+      </div>
+      <div class="delivery-grid">
+
+        <div class="delivery-col">
+          <h3 class="delivery-col-title">🚚 Delivery Zones</h3>
+          <div class="zone-group">
+            <span class="zone-label">Kigali — Same Day ⚡</span>
+            <div class="zone-chips">
+              <span class="zone-chip">Nyarutarama</span>
+              <span class="zone-chip">Kimihurura</span>
+              <span class="zone-chip">Kacyiru</span>
+              <span class="zone-chip">Remera</span>
+              <span class="zone-chip">Gikondo</span>
+              <span class="zone-chip">Nyamirambo</span>
+              <span class="zone-chip">Kiyovu</span>
+              <span class="zone-chip">Kanombe</span>
+              <span class="zone-chip">Kimironko</span>
+              <span class="zone-chip">Gacuriro</span>
+            </div>
+          </div>
+          <div class="zone-group">
+            <span class="zone-label">Nationwide — Max 2 Days 🇷🇼</span>
+            <div class="zone-chips">
+              <span class="zone-chip secondary">Musanze</span>
+              <span class="zone-chip secondary">Huye</span>
+              <span class="zone-chip secondary">Rubavu</span>
+              <span class="zone-chip secondary">Rusizi</span>
+              <span class="zone-chip secondary">Rwamagana</span>
+              <span class="zone-chip secondary">Muhanga</span>
+              <span class="zone-chip secondary">Nyagatare</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="delivery-col">
+          <div class="delivery-info-card">
+            <div class="delivery-info-icon">📦</div>
+            <h4>Live Order Tracking via WhatsApp</h4>
+            <p>After you order, we send you WhatsApp updates at every step — order confirmed, dispatched, and out for delivery. You're never left wondering.</p>
+          </div>
+          <div class="delivery-info-card returns-card">
+            <div class="delivery-info-icon">🔄</div>
+            <h4>Free 48-Hour Exchange Policy</h4>
+            <p>Wrong size or wrong pair? Contact us within <strong>48 hours</strong> of delivery and we'll arrange a free exchange — no questions asked.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%20need%20to%20exchange%20my%20order." class="delivery-wa-link" target="_blank">Start an exchange on WhatsApp →</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
