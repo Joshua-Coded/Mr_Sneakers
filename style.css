@@ -120,6 +120,18 @@ nav {
   color: var(--accent) !important;
   font-weight: 700 !important;
 }
+.mobile-size-btn {
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray);
+  border-bottom: 1px solid var(--border);
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+}
+.mobile-size-btn:hover { color: var(--white); }
 
 /* ===== HERO ===== */
 .hero {
