@@ -83,18 +83,17 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Our Collection</span>
-        <h2>Trending Sneakers</h2>
-        <p>From classics to the latest drops — we've got every style covered</p>
+        <h2>Top 10 Picks</h2>
+        <p>Premium sneakers for men &amp; women — the best of every brand</p>
       </div>
 
       <div class="filter-tabs">
         <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
         <button class="filter-btn luxury-tab" onclick="filterCards('luxury', this)">👑 Luxury</button>
-        <button class="filter-btn" onclick="filterCards('newbalance', this)">New Balance</button>
-        <button class="filter-btn" onclick="filterCards('clarks', this)">Clarks</button>
-        <button class="filter-btn" onclick="filterCards('clean', this)">Clean &amp; White</button>
         <button class="filter-btn" onclick="filterCards('nike', this)">Nike</button>
         <button class="filter-btn" onclick="filterCards('adidas', this)">Adidas</button>
+        <button class="filter-btn" onclick="filterCards('newbalance', this)">New Balance</button>
+        <button class="filter-btn" onclick="filterCards('classic', this)">Classics</button>
       </div>
 
       <!-- LUXURY BANNER -->
@@ -103,359 +102,132 @@
           <span class="luxury-crown">👑</span>
           <div>
             <h3>Celebrity Grade Collection</h3>
-            <p>Exclusive collabs, limited drops &amp; grail-level kicks. The rarest sneakers on the planet.</p>
+            <p>Exclusive collabs &amp; grail-level kicks. The rarest sneakers on the planet.</p>
           </div>
         </div>
       </div>
 
       <div class="cards-grid" id="cardsGrid">
 
-        <!-- LUXURY -->
         <div class="card luxury-card" data-brand="luxury">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1556906781-9a412961a28e?w=500&q=85" alt="Travis Scott Jordan 1" loading="eager"/>
-            <span class="card-tag luxury-tag">👑 Collab</span>
+            <img src="https://images.unsplash.com/photo-1556906781-9a412961a28e?w=500&q=85" alt="Air Jordan 1" loading="eager"/>
+            <span class="card-tag luxury-tag">👑 Luxury</span>
           </div>
           <div class="card-body">
-            <div class="luxury-label">Celebrity Drop</div>
-            <h3>Travis Scott × Air Jordan 1</h3>
-            <p>Reverse Swoosh, backwards Nike logo. Worn by Travis, coveted by everyone.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Travis%20Scott%20x%20Air%20Jordan%201.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
+            <div class="luxury-label">Grail — Men &amp; Women</div>
+            <h3>Air Jordan 1 Retro High</h3>
+            <p>The original icon. Worn by legends, loved by everyone. Men's &amp; women's sizing.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Air%20Jordan%201%20Retro%20High.%20Please%20send%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
           </div>
         </div>
 
         <div class="card luxury-card" data-brand="luxury">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=85" alt="Off-White Jordan 1" loading="eager"/>
-            <span class="card-tag luxury-tag">👑 Collab</span>
-          </div>
-          <div class="card-body">
-            <div class="luxury-label">Virgil Abloh Legacy</div>
-            <h3>Off-White × Nike Air Jordan 1</h3>
-            <p>The "Ten" collection. One of the most iconic sneaker releases of all time.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Off-White%20x%20Nike%20Air%20Jordan%201.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
-          </div>
-        </div>
-
-        <div class="card luxury-card" data-brand="luxury">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=500&q=85" alt="Balenciaga Triple S" loading="eager"/>
-            <span class="card-tag luxury-tag">👑 Designer</span>
-          </div>
-          <div class="card-body">
-            <div class="luxury-label">High Fashion</div>
-            <h3>Balenciaga Triple S</h3>
-            <p>The dad shoe that started it all. A designer statement piece worn by A-listers.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Balenciaga%20Triple%20S.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
-          </div>
-        </div>
-
-        <div class="card luxury-card" data-brand="luxury">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=500&q=85" alt="Jordan 4 Thunder" loading="eager"/>
-            <span class="card-tag luxury-tag">👑 Grail</span>
-          </div>
-          <div class="card-body">
-            <div class="luxury-label">Grail Level</div>
-            <h3>Air Jordan 4 Retro "Thunder"</h3>
-            <p>Drake's shoe. Jay-Z's shoe. One of the most sought-after J4 colorways ever.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Air%20Jordan%204%20Retro%20Thunder.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
-          </div>
-        </div>
-
-        <div class="card luxury-card" data-brand="luxury">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=500&q=85" alt="Yeezy 700" loading="eager"/>
+            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=500&q=85" alt="Yeezy 700" loading="eager"/>
             <span class="card-tag luxury-tag">👑 Limited</span>
           </div>
           <div class="card-body">
-            <div class="luxury-label">Kanye West Design</div>
+            <div class="luxury-label">Kanye West — Unisex</div>
             <h3>Yeezy 700 Wave Runner</h3>
-            <p>The shoe that broke the internet. Multicolor mesh, dad-shoe royalty.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Yeezy%20700%20Wave%20Runner.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
+            <p>The shoe that broke the internet. Chunky sole, multicolor upper. Unisex sizing.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Yeezy%20700%20Wave%20Runner.%20Please%20send%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
           </div>
         </div>
 
-        <div class="card luxury-card" data-brand="luxury">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=500&q=85" alt="Sacai LDWaffle" loading="eager"/>
-            <span class="card-tag luxury-tag">👑 Collab</span>
-          </div>
-          <div class="card-body">
-            <div class="luxury-label">Designer Collab</div>
-            <h3>Sacai × Nike LDWaffle</h3>
-            <p>Double Swoosh, deconstructed sole. Fashion-week approved, street-ready.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Sacai%20x%20Nike%20LDWaffle.%20Please%20send%20me%20details%20and%20pricing." class="card-btn luxury-btn" target="_blank">Inquire Now</a>
-          </div>
-        </div>
-
-        <!-- NEW BALANCE -->
-        <div class="card" data-brand="newbalance">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&q=85" alt="New Balance 550" loading="eager"/>
-            <span class="card-tag hot">🔥 Hot</span>
-          </div>
-          <div class="card-body">
-            <h3>New Balance 550</h3>
-            <p>Retro basketball court icon. Clean, minimal, endlessly versatile.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20New%20Balance%20550.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="newbalance">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&q=85" alt="New Balance 990" loading="eager"/>
-            <span class="card-tag">New Balance</span>
-          </div>
-          <div class="card-body">
-            <h3>New Balance 990 v6</h3>
-            <p>Made in USA. The grey ghost — a true collector's sneaker.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20New%20Balance%20990%20v6.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="newbalance">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500&q=85" alt="New Balance 327" loading="eager"/>
-            <span class="card-tag">New Balance</span>
-          </div>
-          <div class="card-body">
-            <h3>New Balance 327</h3>
-            <p>70s running-inspired silhouette. Bold N logo, heritage vibes.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20New%20Balance%20327.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="newbalance">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500&q=85" alt="New Balance 574" loading="eager"/>
-            <span class="card-tag">New Balance</span>
-          </div>
-          <div class="card-body">
-            <h3>New Balance 574</h3>
-            <p>The everyday classic. Cushioned, durable, always fresh.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20New%20Balance%20574.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="newbalance">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1556906781-9a412961a28e?w=500&q=85" alt="New Balance 2002R" loading="eager"/>
-            <span class="card-tag hot">🔥 Hot</span>
-          </div>
-          <div class="card-body">
-            <h3>New Balance 2002R</h3>
-            <p>ABZORB cushioning, N-ergy tech. A modern collector's grail.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20New%20Balance%202002R.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <!-- CLARKS -->
-        <div class="card" data-brand="clarks">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=85" alt="Clarks Desert Boot" loading="eager"/>
-            <span class="card-tag hot">🔥 Hot</span>
-          </div>
-          <div class="card-body">
-            <h3>Clarks Desert Boot</h3>
-            <p>The original suede chukka since 1950. Timeless and effortlessly cool.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Clarks%20Desert%20Boot.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="clarks">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=500&q=85" alt="Clarks Wallabee" loading="eager"/>
-            <span class="card-tag">Clarks</span>
-          </div>
-          <div class="card-body">
-            <h3>Clarks Wallabee</h3>
-            <p>Iconic moc-toe silhouette. Soft suede, crepe sole — a streetwear legend.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Clarks%20Wallabee.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="clarks">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=500&q=85" alt="Clarks Desert Trek" loading="eager"/>
-            <span class="card-tag">Clarks</span>
-          </div>
-          <div class="card-body">
-            <h3>Clarks Desert Trek</h3>
-            <p>Two-eyelet chukka. Premium nubuck leather, handcrafted comfort.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Clarks%20Desert%20Trek.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <!-- CLEAN & WHITE -->
-        <div class="card" data-brand="clean">
+        <div class="card" data-brand="nike">
           <div class="card-img-wrap">
             <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500&q=85" alt="Nike Air Force 1" loading="eager"/>
             <span class="card-tag hot">🔥 Hot</span>
           </div>
           <div class="card-body">
-            <h3>Nike Air Force 1 Low</h3>
-            <p>Triple white. The cleanest sneaker ever made. All-day drip.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Nike%20Air%20Force%201%20White.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+            <h3>Nike Air Force 1 — Unisex</h3>
+            <p>Triple white. The cleanest sneaker ever made. Perfect for men &amp; women.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Nike%20Air%20Force%201.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
           </div>
         </div>
 
-        <div class="card" data-brand="clean">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=500&q=85" alt="Adidas Stan Smith" loading="eager"/>
-            <span class="card-tag">Adidas</span>
-          </div>
-          <div class="card-body">
-            <h3>Adidas Stan Smith</h3>
-            <p>The clean legend. Minimalist white leather, iconic green tab.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Adidas%20Stan%20Smith.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <!-- NIKE -->
         <div class="card" data-brand="nike">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=500&q=85" alt="Nike Dunk Low" loading="eager"/>
+            <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=500&q=85" alt="Nike Dunk Low" loading="eager"/>
             <span class="card-tag hot">🔥 Hot</span>
           </div>
           <div class="card-body">
-            <h3>Nike Dunk Low</h3>
-            <p>Street culture staple. Premium leather, bold colorways.</p>
+            <h3>Nike Dunk Low — Unisex</h3>
+            <p>Street culture staple. Bold colorways loved by men &amp; women worldwide.</p>
             <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Nike%20Dunk%20Low.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
           </div>
         </div>
 
-        <div class="card" data-brand="nike">
+        <div class="card" data-brand="adidas">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&q=85" alt="Nike Air Max 270" loading="eager"/>
-            <span class="card-tag">Nike</span>
-          </div>
-          <div class="card-body">
-            <h3>Nike Air Max 270</h3>
-            <p>Biggest Air unit ever. Max cushioning, all-day comfort.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Nike%20Air%20Max%20270.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="nike">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&q=85" alt="Air Jordan 11" loading="eager"/>
+            <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=500&q=85" alt="Adidas Samba OG" loading="eager"/>
             <span class="card-tag hot">🔥 Hot</span>
           </div>
           <div class="card-body">
-            <h3>Air Jordan 11 Retro</h3>
-            <p>Patent leather and mesh. The most iconic Jordan silhouette ever made.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Air%20Jordan%2011%20Retro.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="nike">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500&q=85" alt="Air Jordan 3" loading="eager"/>
-            <span class="card-tag">Jordan</span>
-          </div>
-          <div class="card-body">
-            <h3>Air Jordan 3 Retro</h3>
-            <p>Elephant print, visible Air unit. Michael's favourite — a true grail.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Air%20Jordan%203%20Retro.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="nike">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1556906781-9a412961a28e?w=500&q=85" alt="Nike SB Dunk Pro" loading="eager"/>
-            <span class="card-tag">Nike SB</span>
-          </div>
-          <div class="card-body">
-            <h3>Nike SB Dunk Low Pro</h3>
-            <p>Skate DNA, street heat. Padded collar, premium suede and leather.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Nike%20SB%20Dunk%20Low%20Pro.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <!-- ADIDAS -->
-        <div class="card" data-brand="adidas">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=500&q=85" alt="Adidas Ultraboost" loading="eager"/>
-            <span class="card-tag">Adidas</span>
-          </div>
-          <div class="card-body">
-            <h3>Adidas Ultraboost 23</h3>
-            <p>Responsive Boost foam. Performance meets street style.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Adidas%20Ultraboost%2023.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="adidas">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=85" alt="Adidas Samba OG" loading="eager"/>
-            <span class="card-tag hot">🔥 Hot</span>
-          </div>
-          <div class="card-body">
-            <h3>Adidas Samba OG</h3>
-            <p>The hottest shoe on earth right now. Gum sole, leather upper, pure class.</p>
+            <h3>Adidas Samba OG — Unisex</h3>
+            <p>The hottest shoe right now. Gum sole, leather upper. Ladies' #1 pick.</p>
             <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Adidas%20Samba%20OG.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
           </div>
         </div>
 
         <div class="card" data-brand="adidas">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=500&q=85" alt="Adidas Gazelle" loading="eager"/>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=85" alt="Adidas Stan Smith" loading="eager"/>
             <span class="card-tag">Adidas</span>
           </div>
           <div class="card-body">
-            <h3>Adidas Gazelle Indoor</h3>
-            <p>Velvet suede, slim profile. The retro icon that never goes out of style.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Adidas%20Gazelle.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+            <h3>Adidas Stan Smith — Unisex</h3>
+            <p>The all-white clean classic. Minimal leather, iconic green tab. For everyone.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Adidas%20Stan%20Smith.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
           </div>
         </div>
 
-        <!-- OTHER -->
-        <div class="card" data-brand="other">
+        <div class="card" data-brand="newbalance">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=500&q=85" alt="Converse Chuck 70" loading="eager"/>
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&q=85" alt="New Balance 550" loading="eager"/>
+            <span class="card-tag hot">🔥 Hot</span>
+          </div>
+          <div class="card-body">
+            <h3>New Balance 550 — Unisex</h3>
+            <p>Retro basketball court style. Women's #1 NB pick — clean &amp; versatile.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20New%20Balance%20550.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="newbalance">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&q=85" alt="New Balance 327" loading="eager"/>
+            <span class="card-tag">New Balance</span>
+          </div>
+          <div class="card-body">
+            <h3>New Balance 327 — Unisex</h3>
+            <p>70s running heritage. Wide toe, bold N logo. A favourite for men &amp; women.</p>
+            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20New%20Balance%20327.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card" data-brand="classic">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500&q=85" alt="Converse Chuck 70" loading="eager"/>
             <span class="card-tag">Converse</span>
           </div>
           <div class="card-body">
-            <h3>Converse Chuck 70 High</h3>
-            <p>Upgraded Chuck — thicker canvas, better cushion. A streetwear timeless.</p>
+            <h3>Converse Chuck 70 — Unisex</h3>
+            <p>Canvas classic since 1917. High-top or low — the timeless street shoe.</p>
             <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Converse%20Chuck%2070.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
           </div>
         </div>
 
-        <div class="card" data-brand="other">
+        <div class="card" data-brand="classic">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=500&q=85" alt="Vans Old Skool" loading="eager"/>
+            <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=500&q=85" alt="Vans Old Skool" loading="eager"/>
             <span class="card-tag">Vans</span>
           </div>
           <div class="card-body">
-            <h3>Vans Old Skool</h3>
-            <p>The OG skate shoe with the legendary side stripe. Never goes out.</p>
+            <h3>Vans Old Skool — Unisex</h3>
+            <p>The OG skate canvas shoe. Side stripe, durable build — never goes out of style.</p>
             <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Vans%20Old%20Skool.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="other">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&q=85" alt="Reebok Classic Leather" loading="eager"/>
-            <span class="card-tag">Reebok</span>
-          </div>
-          <div class="card-body">
-            <h3>Reebok Classic Leather</h3>
-            <p>80s running icon. Soft leather upper, clean low-profile silhouette.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Reebok%20Classic%20Leather.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
-          </div>
-        </div>
-
-        <div class="card" data-brand="other">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500&q=85" alt="Puma RS-X" loading="eager"/>
-            <span class="card-tag">Puma</span>
-          </div>
-          <div class="card-body">
-            <h3>Puma RS-X³ Puzzle</h3>
-            <p>Running System tech, chunky layered sole. Bold street-ready statement.</p>
-            <a href="https://wa.me/250792402699?text=Hi!%20I%27m%20interested%20in%20the%20Puma%20RS-X3.%20Can%20you%20tell%20me%20the%20price%20and%20available%20sizes?" class="card-btn" target="_blank">Order Now</a>
           </div>
         </div>
 
